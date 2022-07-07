@@ -1,6 +1,14 @@
 #include <iostream>
 
+void swap (int &a, int &b){
+int c = b;
+b = a;
+a = c;
+}
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    int a = 10;
+    int b = 20;
+    std::cout << a << " - a " << b << " - b"<< std::endl;
+    swap (a,b);
+    std::cout << a << " - a " << b << " - b"<<std::endl;
 }
